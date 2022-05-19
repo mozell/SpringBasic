@@ -17,8 +17,9 @@ import static org.springframework.context.annotation.ComponentScan.*;
 ) //AppConfig.java 자동 등록을 피하기 위해 해당 애노테이션이 붙은 것은 컴포넌트스캔 대상에서 뺀다.
 public class AutoAppConfig {
 
-        @Bean(name = "memoryMemberRepository")
-        public MemberRepository memberRepository() {
-                return new MemoryMemberRepository();
-        }
+//        /** 충돌 테스트 */
+//        @Bean(name = "memoryMemberRepository")
+//        public MemberRepository memberRepository() {
+//                return new MemoryMemberRepository();
+//        }
 }
